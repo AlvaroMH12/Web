@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="Imagenes/Letter-P-grey-icon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"crossorigin="anonymous"/>
+<script src="https://kit.fontawesome.com/bd8db164f0.js" crossorigin="anonymous"></script>
+<title>trabajo</title>
+<style>
+  * {
+    text-decoration: none;
+    list-style: none;
+  }
+  body { 
+    font-family: 'Times New Roman', serif; 
+    margin: 0; 
+    padding: 0; 
+    background: #eee; 
+  }
+  .header { 
+    background: #333; 
+    color: #fff; 
+    padding: 10px 20px; 
+    text-align: center;
+   }
+  .nav { 
+    background: #444; 
+    padding: 10px 0; 
+  }
+  .nav ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center;
+   }
+  .nav ul li { 
+    margin: 0 0; 
+  }
+  .nav ul li a { 
+    color: white;
+    text-decoration: none;
+    border-right: solid 2px white;
+    padding: 10px 13px; 
+   }
+   .nav ul li a.home {
+    background-color: white;
+    color: black;
+    border-left: 2px solid white;
+   }
+   .nav ul li a:hover {
+      color: rgb(0, 0, 0);
+      background-color: #ffffff;
+      padding: 10px 13px;
+      transition: 0.7s;
+    }
+  .main { 
+    padding: 20px; 
+    display: flex; 
+    flex-wrap: wrap; 
+  }
+
+  /*INICIO*/
+  .section { 
+    margin-bottom: 20px; 
+    background: #000000;
+    height: 100vh;
+   }
+  .news-article { 
+    background: #fff; 
+    border: 1px solid #ddd;
+    padding: 15px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  }
+ /*PRODUCTOS*/
+  .section2 { 
+    margin-bottom: 20px; 
+    background: #000000;
+    
+    height: 100vh;
+   }
+  .news-article2 { 
+    background: #fff; 
+    border: 1px solid #ddd;
+    padding: 15px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+
+  }
+
+   /*PAGO*/
+  .section3 { 
+    margin-bottom: 20px; 
+    height: 100vh;
+    background: #000000;
+   }
+  .news-article3 { 
+    background: #fff; 
+    border: 1px solid #ddd;
+    padding: 15px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  }
+
+
+   /*CURSOS*/
+  .section4 { 
+    margin-bottom: 20px; 
+    background: #000000;
+    height: 100vh;
+   }
+  .news-article4 { 
+    background: #fff; 
+    border: 1px solid #ddd;
+    padding: 15px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  }
+
+
+   /*FORMULARIO*/
+  .section5 { 
+    margin-bottom: 20px; 
+    background: #000000;
+    height: 100vh;
+   }
+  .news-article5 { 
+    background: #fff; 
+    border: 1px solid #ddd;
+    padding: 15px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  }
+
+ /*PRODUCTOS*/
+
+.cont {
+   display: grid;
+   grid-template-areas: "i  i2  i3  i4  i5 "
+                        "o  o2  o3  o4  o5  ";
+   gap: 5px;
+}
+
+
+
+img {
+  width: 250px;
+  height: 150px;
+}
+
+#i1 {
+  grid-area: i;
+  width: 250px;
+}
+#i2 {
+  grid-area: i2;
+  width: 250px;
+}
+#i3 {
+  grid-area: i3;
+  width: 250px;
+}
+#i4 {
+  grid-area: i4;
+  width: 250px;
+}
+#i5 {
+  grid-area: i5;
+  width: 250px;
+}
+#i6 {
+  grid-area: o;
+  width: 250px;
+}
+#i7 {
+  grid-area: o2;
+  width: 250px;
+}
+#i8 {
+  grid-area: o3;
+  width: 250px;
+}
+#i9 {
+  grid-area: o4;
+  width: 250px;
+}
+#i10 {
+  grid-area: o5;
+  width: 250px;
+}
+ /*MEDIA QUERY*/
+
+  .footer { 
+    background: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px;
+    margin-top: 20px; 
+    }
+  .footer a {
+    color: white;  
+    margin: auto;
+  }
+  .footer i { 
+    margin: 10px;
+
+  }
+  @media (min-width: 768px) {
+    .section { width: 49%; 
+    }
+  }
+  @media (min-width: 1024px) {
+    .nav {
+      padding: 30px;
+    }
+    .nav ul li a {
+      padding: 30px;
+    }
+    .nav ul li a:hover {
+      color: #000000;
+      background-color: #ffffff;
+      padding: 30px;
+      transition: 0.7s;
+    }
+    .main {
+      display: grid;
+      grid-template-areas: 
+      "dep dep dep dep"
+      "fam fam fam fam  "
+      "ave ave ave ave "
+      "tec tec tec tec "
+      "niñ niñ niñ niñ ";
+      gap: 10px;
+    }
+    #dep {
+      grid-area: dep; 
+      width: 100%;     
+    }
+    #fam {
+      grid-area: fam;
+      width: 100%;     
+
+    }
+    #ave {
+      grid-area: ave;
+      width: 100%;     
+
+    }
+    #tec {
+      grid-area: tec;
+      width: 100%;     
+
+    }
+    #niñ {
+      grid-area: niñ;
+      width: 100%;     
+
+    }
+       
+ }
+
+  /**/
+
+ h1 {font-family: Bradley Hand ITC; display: flex; text-align: center; justify-content: center;}
+h2 {font-family:  Bradley Hand ITC; display: flex; text-align: center; justify-content: center;}
+nav a {font-size: 40px; font-family: Bradley Hand ITC; text-transform: uppercase;}
+h3 {font-size: 20px; font-family: Kristen ITC;}
+p {font-size: 10px; font-family: Lucida Calligraphy; align-items: center; justify-content: center;}
+span{ font-family: Berlin Sans FB Demi; font-size: 15px;}
+input{font-family: Kristen ITC; text-transform: uppercase;}
+
+label { font-size: 10px; font-family:Kristen ITC ;}
+
+
+ /*INICIO*/
+.intro{
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  grid-template-areas:  'v1  v2 '
+                        'm1  m2'
+                        'j1  j2';
+  
+}
+#v1 {
+  grid-area: v1;
+  gap: 5px;
+  width: 650px;
+  height: 180px;
+  background:#444 ;
+}
+
+#v2 {
+  grid-area: v2;
+  margin: 5px;
+  width: 650px;
+  height: 180px;
+  background: #333;
+}
+
+#m1{
+  grid-area: m1;
+  margin: 5px;
+  width: 650px;
+  height: 180px;
+  background:#444 ;
+}
+
+#m2{
+  grid-area: m2;
+  margin: 5px;
+  width: 650px;
+  height: 180px;
+  background: #333;
+}
+
+#j1 {
+  grid-area: j1;
+  margin: 5px;
+  width: 650px;
+  height: 180px;
+  background:#444 ;
+}
+#j2 {
+  grid-area: j2;
+  margin: 5px;
+  width: 650px;
+  height: 180px;
+  background: #333;
+}
+
+#v1{
+  background-image: url(https://southamericaplanet.com/wp-content/uploads/2020/01/MIST.jpg);    
+    background-size: cover;
+    
+    padding: 20px;
+    width: 100%;
+    height: 180px;
+    transition: transform 0.3s ease;
+    display: flex;
+    border-radius: 10px;
+}
+#m2{
+  background-image: url(https://blog.up.edu.mx/hubfs/tecnolog%C3%ADa-en-la-educaci%C3%B3n.png#keepProtocol);    
+    background-size: cover;
+    padding: 20px;
+    width: 100%;
+    height: 180px;
+    transition: transform 0.3s ease;
+    display: flex;
+    border-radius: 10px;
+}
+#j1 {
+  background-image: url(https://www.smartick.es/blog/wp-content/uploads/2022/07/noticia-falsa.jpg);    
+    background-size: cover;
+    padding: 20px;
+    width: 100%;
+    height: 180px;
+    transition: transform 0.3s ease;
+    display: flex;
+    border-radius: 10px;
+}
+.text {
+    width: 100%;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.text2 {
+    width: 100%;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    border-radius: 10px;
+}
+.text3 {
+    width: 100%;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    border-radius: 10px;
+}
+#v1:hover, #m2:hover, #j1:hover{
+            transform: scale(1);
+            opacity: 1;
+            
+        }
+#v1:hover.text, #m2:hover.text2, #j1:hover .text3{
+            opacity: 2;
+            scale: 1;
+}
+ /*PAGO*/
+
+.col img {
+  width: 15%;
+  height: 10%;
+}
+
+.contenedor2{
+ 
+  text-align: center;
+}
+
+span {
+  margin: 5px;
+  padding: 0 10px;
+}
+
+input {margin: 8px;}
+
+.submit{
+  width: 400px;
+  
+}
+
+
+ /*FORMLARIO*/
+.arc {
+  background: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  
+  padding-top: 40px;
+  
+  
+  
+}
+
+.boton {
+  width: 150px;
+  border-radius: 5px;
+}
+
+ /*CURSOS*/
+
+.caj {
+  display: grid;
+  margin: 20px;
+  grid-template-areas: 'c1'
+                       'c2'
+                       'c3';
+}
+.c1 {
+  grid-area: c1;
+  background: #444;
+  width: 1400px;
+  height: 200px;
+  margin: 10px;
+}
+.c2 {
+  grid-area: c2;
+  width: 1400px;
+  height: 200px;
+  background: #444;
+  margin: 10px;
+}
+.c3 {
+  grid-area: c3;
+  width: 1400px;
+  height: 200px;
+  background: #444;
+
+  margin: 10px;
+}
+
+.c1, .c2 ,.c3{
+  font-size: 50px;
+  text-align: center;
+}
+.c1 p,  .c2 p ,.c3 p{
+  font-size: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>CAKE AND BREAK</h1>
+</div>
+
+<div class="nav">
+  <ul>
+    <li><a href="#dep" class="home">Inicio</a></li>
+    <li><a href="#fam">Productos</a></li>
+    <li><a href="#ave">Pago</a></li>
+    <li><a href="#tec">Cursos</a></li>
+    <li><a href="#niñ">Formulario</a></li>
+  </ul>
+</div>
+
+<div class="main">
+  <!-- Sección de Deportes -->
+  <div class="section" id="dep">
+    <h2 class="category">Inicio</h2>
+    <article class="news-article">
+      <h3>Bienvenido a CAKE AND BREAK </h3>
+      <p>Presenta la primera empresa que ofrece servicios de ventas y cursos de pasteleria y panaderia a nivel internacion</p>
+      <div class="intro">
+         <div class="v" id="v1"><p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus ea architecto a, ullam optio quia perferendis mollitia harum maiores sunt? Quibusdam mollitia sequi reiciendis nesciunt labore temporibus libero deserunt neque.</p></div>
+         <div class="v"id="v2">VISION</div>
+         <div class="m" id="m1">MISION</div>
+         <div class="m" id="m2"><p class="text2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium facilis iste illum unde veniam nihil dignissimos amet odio quos, itaque, adipisci sit velit voluptatum nemo voluptate nam iure nostrum officiis!</p></div>
+         <div class="j" id="j1"><p class="text3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis error amet reprehenderit omnis deleniti asperiores totam animi temporibus numquam, explicabo eius distinctio corporis quis, natus, nam perferendis sint ut! Sit.</p></div>
+         <div class="j" id="j2">OBJETIVO</div>
+      </div>
+    </article>
+  </div>
+  <!-- Sección de Familia -->
+  <div class="section2" id="fam">
+    <h2 class="category">Productos</h2>
+    <article class="news-article2">
+      <div class="cont">
+        <div class="sect" id="i1">
+              
+          <h3>PAN BLANCO</h3>
+          <p> Suave y esponjoso, ideal para acompañar comidas reconfortantes.</p>
+          <img src="https://www.finedininglovers.com/es/sites/g/files/xknfdk1706/files/2023-02/kinds-bread-white-bread%C2%A9iStock.jpg" alt="Precio s./2.00 x 4 ">
+          <button class="boton" type="submit">Comprar</button>
+          <span>Precio s./2.00 x 4 </span>
+       
+       
+        </div>
+        <div class="sect" id="i2">
+       
+          <h3>PAN INTEGRAL</h3>
+          <p>Nutritivo y sabroso, perfecto con ensaladas frescas.</p>
+          <img src="https://www.finedininglovers.com/es/sites/g/files/xknfdk1706/files/2023-02/kinds-bread-whole-wheat-bread%C2%A9iStock.jpg" >
+          <button class="boton" type="submit">Comprar</button>
+          <span>Precio s./3.50 x 5</span>
+       
+       
+        </div>
+        <div class="sect" id="i3">
+       
+          <h3>PAN DE CENTENO</h3>
+          <p>Denso y aromático, marida bien con quesos fuertes.</p>
+          <img src="https://www.finedininglovers.com/es/sites/g/files/xknfdk1706/files/2023-02/kinds-bread-rye-bread%C2%A9iStock.jpg" >
+          <button class="boton" type="submit">Comprar</button>
+          <span>Precio s./4.00 x 4</span>
+       
+       
+        </div>
+        <div class="sect" id="i4">
+       
+          <h3>BAGUETTE</h3>
+          <p> Crujiente por fuera, tierno por dentro, excelente con embutidos.</p>
+          <img src="https://www.finedininglovers.com/es/sites/g/files/xknfdk1706/files/2023-02/kinds-bread-baguette%C2%A9iStock.jpg" >
+          <button class="boton" type="submit">Comprar</button>
+          <span>Precio s./2.50 x 1</span>
+          
+    
+        </div>
+        <div class="sect" id="i5">
+       
+          <h3>CHAPATA</h3>
+          <p>Rústica y sabrosa, ideal para mojar en aceite de oliva y vinagre balsámico.</p>
+          <img src="https://www.finedininglovers.com/es/sites/g/files/xknfdk1706/files/2023-02/kinds-bread-ciabatta%C2%A9iStock.jpg">
+          <button class="boton" type="submit">Comprar</button>
+          <span>Precio s./3.00 x 4</span>
+          
+       
+  
+        </div>
+        <div class="sect" id="i6">
+      
+          <h3>Tarta mousse de chocolate y baileys</h3>
+          <p>Deliciosa y cremosa, perfecta con café.</p>
+          <img src="https://i.blogs.es/670cbe/1366_2000/1366_2000.jpeg" >
+          <button class="boton" type="submit">Comprar</button>
+          <span>Precio s./20.00 x 1</span>
+      
+       
+        </div>
+        <div class="sect" id="i7">
+       
+          <h3>Tarta de fresas con crema de vainilla</h3>
+          <p> Refrescante y suave, ideal con té helado.</p>
+          <img src="https://i.blogs.es/a0951a/1366_2000/1366_2000.jpg">
+          <button class="boton" type="submit">Comprar</button>
+          <span> Precio s./30.00 x 1"</span>
+       
+       
+        </div>
+        <div class="sect" id="i8">
+       
+          <h3>Cheesecake de Nutella</h3>
+          <p>excelente con helado de vainilla.</p>
+          <img src="https://i.blogs.es/618ab3/1366_2000-14-/1366_2000.jpg">
+          <button class="boton" type="submit">Comprar</button>
+          <span>Precio s./15.00 x 1</span>
+        
+  
+        </div>
+        <div class="sect" id="9">
+      
+          <h3>Tarta fácil de hojaldre con fresas y almendra</h3>
+          <p> Ligera y crujiente, marida bien con vino blanco.</p>
+          <img src="https://i.blogs.es/e2bb36/1366_2000-1-/1366_2000.jpg"alt="Precio s./35.00 x 1">
+          <button class="boton" type="submit">Comprar</button>
+          <span> Precio s./35.00 x 1</span>
+       
+       
+        </div>
+        <div class="sect" id="10">
+       
+          <h3> Banana cream pie</h3>
+          <p>Suave y reconfortante, acompaña bien con un café caliente.</p>
+          <img src="https://i.blogs.es/6d5583/1366_2000-2-/1366_2000.jpg"alt="Precio s./12.00 x 1">
+          <button class="boton" type="submit">Comprar</button>
+          <span> Precio s./12.00 x 1</span>
+        </div>
+      </div>
+      
+    </article>
+  </div>
+  <!-- Agrega más secciones aquí -->
+  <div class="section3" id="ave">
+    <h2 class="category">Pago</h2>
+    <article class="news-article3">
+      <div class="contenedor2">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Completa los sigientes datos</h3>
+                    <div class="input-box">
+                        <span > Nombre completo:</span>
+                        <input type="text" placeholder="#########">
+    
+                    </div>
+                    <div class="input-box">
+                        <span > Email:</span>
+                        <input type="email" placeholder="#########">
+                    </div>
+                    <div class="input-box">
+                        <span > Direccion:</span>
+                        <input type="text" placeholder="#########">
+    
+                    </div>
+                    <div class="input-box">
+                        <span > Ciudad:</span>
+                        <input type="text" placeholder="#########">
+    
+                    </div>
+                    <div class="flex">
+                        <div class="input-box">
+                            <span > Estado:</span>
+                            <input type="text" placeholder="#########">
+        
+                        </div>
+                        <div class="input-box">
+                            <span > Codigo postal:</span>
+                            <input type="text" placeholder="#########">
+        
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="title">elige el medio de pago</h3>
+                    <div class="input-box">
+                        <span > Tarjetas Aceptadas:</span>
+                        <img src="C:\Users\LENOVO\AppData\Local\Temp\6a6e8589-8525-4d8b-bba1-9ac210b97c46_payment gateway.zip.c46\payment gateway\images\card_img.png">
+    
+                    </div>
+                    <div class="input-box">
+                        <span > Nombre de la tarjeta:</span>
+                        <input type="email" placeholder="#########">
+                    </div>
+                    <div class="input-box">
+                        <span >Numero de la tarjeta: </span>
+                        <input type="number" placeholder="#########">
+    
+                    </div>
+                    <div class="input-box">
+                        <span > Mes:</span>
+                        <input type="text" placeholder="#########">
+    
+                    </div>
+                    <div class="flex">
+                        <div class="input-box">
+                            <span >Año:</span>
+                            <input type="text" placeholder="#########">
+        
+                        </div>
+                        <div class="input-box">
+                            <span > CVV:</span>
+                            <input type="text" placeholder="#########">
+        
+                        </div>
+                    </div>
+                 </div>
+              </div>
+              <input type="submit" value="proceder con el pago" class="submit">
+        </form>
+      </div>
+      
+    </article>
+  </div>
+  <div class="section4" id="tec">
+    <h2 class="category">Cursos</h2>
+    <article class="news-article4">
+      <div class="caj">
+        <div class="c1">Curso de Reposteria
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit quam, ad molestias autem eaque alias iste ipsam id magnam asperiores culpa hic? Qui incidunt, doloremque reprehenderit rem fugiat esse deserunt.</p>
+          <a href="https://novaescuela.edu.pe">Inscribete</a>
+          <span>50% de descuentos si se registra como miembro</span>
+        </div>
+        <div class="c2">Curso de Cocina
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit quam, ad molestias autem eaque alias iste ipsam id magnam asperiores culpa hic? Qui incidunt, doloremque reprehenderit rem fugiat esse deserunt.</p>
+          <a href="https://enterprise.edu.pe/escuela-de-gastronomia/?">Inscribete</a>
+          <span>20% de descuentos si se registra como miembro</span>
+        </div>
+        
+        <div class="c3">Curso de chocolateria
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit quam, ad molestias autem eaque alias iste ipsam id magnam asperiores culpa hic? Qui incidunt, doloremque reprehenderit rem fugiat esse deserunt.</p>
+          <a href="https://chocopro.pe">Inscribete</a>
+          <span>40% de descuentos si se registra como miembro</span>
+        </div>
+       
+      </div>
+
+      
+    </article>
+  </div>
+  <div class="section4" id="niñ">
+    <h2 class="category">Forlumario</h2>
+    <article class="news-article4">
+      <h2>Completa los siguientes datos</h2>
+      <div class="arc">
+        <form class="formulario" ">
+          <div class="g1">
+             <i class="fa-solid fa-user"></i>
+             <input class="input" type="text"  name="nombre"placeholder="Ingresa tu nombre">
+          </div>
+          <div class="g1">
+             <i class="fa-regular fa-user"></i>
+             <input class="input"type="text" name="apellido" placeholder="Ingresa tu apellido">
+          </div>
+        
+          <div class="g1">
+             <i class="fa-regular fa-pen-to-square"></i>
+             <input class="input" type="text" name="edad" placeholder="Ingresa tu edad">
+          </div>
+          <div class="g1">
+             <i class="fa-solid fa-person"></i>
+             <input type="radio" class="input2" name="sexo">Masculino
+             <i class="fa-solid fa-person-dress"></i>
+             <input type="radio" class="input2" name="sexo">Femeninino
+          </div>
+
+          <br>
+          <div class="g2">
+             <button  id="singup"    class="boton" type="submit">Registrase</button>
+             <button  id="singin"    class="boton" type="submit">Login</button>
+          </div>
+        </form>
+      </div>
+      
+      
+    
+      
+    </article>
+  </div>
+  
+</div>
+<div class="footer">
+  <h3>Siguenos en nuestra redes sociales </h3>
+  <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i>CAKE AND BREAD </a>
+  <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i>CAKE AND BREAD </a>
+  <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i>@ CAKEAND_BREAD</a>
+  <p>© 2024 CAKE AND BREADl</p>
+</div>
+
+</body>
+</html>
